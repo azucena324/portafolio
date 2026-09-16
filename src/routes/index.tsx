@@ -7,7 +7,6 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
 import { Gallery } from "@/components/portfolio/Gallery";
 import { Videos } from "@/components/portfolio/Videos";
-import { Quiz } from "@/components/portfolio/Quiz";
 import { ScrollProgress } from "@/components/portfolio/ScrollProgress";
 import { Timeline } from "@/components/portfolio/Timeline";
 import { Services } from "@/components/portfolio/Services";
@@ -21,7 +20,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portafolio de Vicky Andino, editora de video: TikTok, Reels, Shorts, anuncios, lyrics animados y recursos con Inteligencia Artificial.",
+          "Portafolio de Vicky Andino, editora de video: TikTok, Reels, Shorts, anuncios, lyrics animados, informes, páginas web y gestión de redes sociales.",
       },
       { property: "og:title", content: "Vicky Andino | Editora de Video Creativa" },
       {
@@ -48,7 +47,6 @@ function Index() {
         <Projects />
         <Gallery />
         <Videos />
-        <Quiz />
         <Timeline />
         <Services />
         <Contact />

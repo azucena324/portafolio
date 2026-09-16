@@ -1,6 +1,34 @@
 import { Reveal, SectionTitle } from "./Reveal";
 import { ABOUT, PROFILE } from "./data";
 import { Sparkles, Film } from "lucide-react";
+import { motion } from "motion/react";
+
+const STATS = [
+  { value: "50+", label: "Videos editados" },
+  { value: "3+", label: "Años creando" },
+  { value: "100%", label: "Dedicación" },
+];
+
+function Equalizer() {
+  const bars = [0.7, 1, 0.4, 0.85, 0.55, 0.95, 0.3, 0.75, 0.5, 0.9, 0.35, 0.65];
+  return (
+    <div className="flex items-end justify-center gap-1.5 h-16">
+      {bars.map((h, i) => (
+        <motion.span
+          key={i}
+          className="w-1.5 rounded-full bg-gradient-to-t from-primary/40 to-lilac"
+          animate={{ height: [`${h * 30}%`, `${h * 100}%`, `${h * 45}%`, `${h * 80}%`] }}
+          transition={{
+            duration: 1.2 + (i % 4) * 0.3,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.08,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 export function About() {
   return (
@@ -12,7 +40,7 @@ export function About() {
           <Reveal className="relative">
             <span className="absolute -left-3 -top-3 size-1.5 rounded-full bg-lilac animate-pulse-glow" />
             <span className="absolute -right-2 top-1/3 size-1 rounded-full bg-primary animate-pulse-glow" />
-            <div className="glass-panel h-full rounded-3xl p-7 sm:p-10">
+            <div className="glass-panel flex h-full flex-col rounded-3xl p-7 sm:p-10">
               <p className="text-base leading-relaxed text-foreground/90 sm:text-lg">
                 {PROFILE.intro}
               </p>
@@ -23,6 +51,27 @@ export function About() {
                 <span className="rounded-full border border-border px-4 py-2">
                   {PROFILE.subject}
                 </span>
+              </div>
+
+              <div className="mt-auto pt-8">
+                <div className="grid grid-cols-3 gap-3">
+                  {STATS.map((s) => (
+                    <div
+                      key={s.label}
+                      className="rounded-2xl border border-border bg-secondary/25 p-3 text-center"
+                    >
+                      <p className="text-xl font-bold text-gradient-violet sm:text-2xl">
+                        {s.value}
+                      </p>
+                      <p className="mt-1 text-[0.6rem] uppercase tracking-[0.15em] text-muted-foreground">
+                        {s.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 rounded-2xl border border-border bg-secondary/20 px-5 py-4">
+                  <Equalizer />
+                </div>
               </div>
             </div>
           </Reveal>

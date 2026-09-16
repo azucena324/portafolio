@@ -1,6 +1,6 @@
 import { Reveal, SectionTitle } from "./Reveal";
 import { SERVICES } from "./data";
-import { Image, Megaphone, Music, Palette, Smartphone, Sparkles } from "lucide-react";
+import { Image, Megaphone, Music, Palette, Smartphone, Sparkles, Presentation, Globe, Share2 } from "lucide-react";
 
 const ICONS = {
   smartphone: Smartphone,
@@ -9,6 +9,9 @@ const ICONS = {
   sparkles: Sparkles,
   image: Image,
   palette: Palette,
+  presentation: Presentation,
+  globe: Globe,
+  share: Share2,
 } as const;
 
 export function Services() {
