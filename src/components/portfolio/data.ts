@@ -114,7 +114,7 @@ export const PROJECTS = [
     detail:
       "Anuncios publicitarios de productos presentados en mi portafolio: calzado de moda y deportivo, pizza, volteado de piña, anillos, suplementos para el cabello y crema facial.",
     tech: ["Edición publicitaria", "Composición visual", "Corrección de color"],
-    link: PROFILE.youtube,
+    link: null,
     works: ["w3", "w4", "w5", "w6", "w7", "w8", "w9", "w10"],
   },
   {
