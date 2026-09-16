@@ -222,15 +222,24 @@
   }
 }
 
-/* Hacer la insignia "Edit with Lovable" prácticamente invisible */
+/* Hacer la insignia "Edit with Lovable" totalmente invisible */
 a[href*="lovable"],
 div[class*="lovable-badge"],
 div[id*="lovable-badge"],
-iframe[src*="lovable"] {
-  opacity: 0.01 !important;
-  width: 1px !important;
-  height: 1px !important;
+iframe[src*="lovable"],
+span[class*="lovable"],
+div[class*="lovable"] {
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
   font-size: 0 !important;
   overflow: hidden !important;
   pointer-events: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+  display: none !important;
 }
