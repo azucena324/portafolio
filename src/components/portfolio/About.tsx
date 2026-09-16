@@ -4,7 +4,7 @@ import { Sparkles, Film } from "lucide-react";
 import { motion } from "motion/react";
 
 const STATS = [
-  { value: "50+", label: "Videos editados" },
+  { value: "+20", label: "Personas satisfechas" },
   { value: "3+", label: "Años creando" },
   { value: "100%", label: "Dedicación" },
 ];
