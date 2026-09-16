@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const STATS = [
   { value: "+20", label: "Personas satisfechas" },
-  { value: "3+", label: "Años creando" },
+  { value: "1+", label: "Años creando" },
   { value: "100%", label: "Dedicación" },
 ];
 
