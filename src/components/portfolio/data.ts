@@ -185,6 +185,21 @@ export const SERVICES = [
     text: "Corrección de color y transiciones dinámicas en cada edición.",
     icon: "palette",
   },
+  {
+    title: "Informes y diapositivas",
+    text: "Informes profesionales, diapositivas animadas y cálculos en Excel.",
+    icon: "presentation",
+  },
+  {
+    title: "Diseño de páginas web",
+    text: "Creación y publicación de páginas web modernas y fáciles de navegar.",
+    icon: "globe",
+  },
+  {
+    title: "Gestión de redes sociales",
+    text: "Manejo de cuentas y contenido para distintas redes sociales.",
+    icon: "share",
+  },
 ];
 
 export const NAV = [
@@ -194,7 +209,6 @@ export const NAV = [
   { id: "proyectos", label: "Proyectos" },
   { id: "galeria", label: "Galería" },
   { id: "videos", label: "Mis videos" },
-  { id: "quiz", label: "Tu estilo" },
   { id: "trayectoria", label: "Trayectoria" },
   { id: "servicios", label: "Servicios" },
   { id: "contacto", label: "Contacto" },
